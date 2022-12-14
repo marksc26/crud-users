@@ -13,8 +13,11 @@ const UserCard = ({user, deleteUser, setUserUpdate, handleChangeShowModal}) => {
     <article className='user'>
         <h2 className='user--title'>{`${user.first_name} ${user.last_name}`}</h2>
         <ul className='user--list'>
-            <li className='user--item'><span><i className='bx bx-envelope'></i>Email: </span>{user.email}</li>
-            <li className='user--item'><span><i className='bx bx-gift'></i>Birthday: </span>{user.birthday}</li>
+            <div className='container-list'>
+                <li className='user--item'><span><i className='bx bx-envelope'></i>Email: </span>{user.email}</li>
+                <li className='user--item'><span><i className='bx bx-gift'></i>Birthday: </span>{user.birthday}</li>
+            </div>
+            
         </ul>
 
         <div className='edit-btn'>

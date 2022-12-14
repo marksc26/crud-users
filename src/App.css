@@ -2,7 +2,8 @@ html{
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
     font-family: 'Poppins', sans-serif;
-    background: -webkit-radial-gradient(#48406d, #231942, #1b1433);
+    /*background: -webkit-radial-gradient(#48406d, #231942, #1b1433);*/
+    background-image: url('./assets/img/nebula-space-colors_3500x2200_xtrafondos.com.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -31,12 +32,14 @@ ul{
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    color: #e0b1cb;
+    color: #59a5d8;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .header--btn{
-    background-color: #e0b1cb;
-    color: #231942;
+    background-color: #133c55;
+    color: #91e5f6;
     width: 150px;
     height: 35px;
     border-radius: 10px;
@@ -55,8 +58,8 @@ ul{
 }
 
 .header--btn:hover{
-    background-color: #be95c4;
-    color: #5e548e;
+    background-color: #386fa4;
+    color: #91e5f6;
     transform: translateY(-3px);
     
 }
@@ -76,25 +79,27 @@ ul{
     width: 300px;
     height: 300px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.048);
+    background: rgba(255, 255, 255, 0.021);
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     transition: all 600ms;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-left: 1px solid rgba(255, 255, 255, 0.301);
-    border-top: 1px solid rgba(255, 255, 255, 0.301);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(3px);
+    border-left: 1.7px solid rgba(255, 255, 255, 0.301);
+    border-top: 1.7px solid rgba(255, 255, 255, 0.301);
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    
 }
 .user:hover{
     
     transform: translateY(-7px);
 }
 
+
 .user--title{
-    color: #e0b1cb;
+    color: #91e5f6;
     font-weight: bold;
     margin-top: 0;
     
@@ -102,16 +107,20 @@ ul{
 
 .user--list{
     margin-top: 0;
-    color:#e0aaffab;
+    color:#91e5f6;
+    display: flex;
+    align-items: center;
 }
+
+
 
 .user--item i {
     font-size: 20px;
+    
 
 }
 .user--item span{
     font-weight: bolder;
-
 }
 
 .edit-btn{
@@ -129,13 +138,13 @@ ul{
     border-radius: 10px;
     cursor: pointer;
     border: none;
-    color: #240046;
+    color: #386fa4;
     transition: 500ms;
 }
 
 .trash:hover{
-    background-color: #8872a5;
-    color: #e0aaff;
+    background-color: #386fa4;
+    color: #ccdbdc;
 }
 
 .edit{
@@ -144,13 +153,13 @@ ul{
     border-radius: 10px;
     cursor: pointer;
     border: none;
-    color: #240046;
+    color: #386fa4;
     transition: 500ms;
 }
 
 .edit:hover{
-    background-color: #8872a5;
-    color: #e0aaff;
+    background-color: #386fa4;
+    color: #ccdbdc;
 }
 
 
