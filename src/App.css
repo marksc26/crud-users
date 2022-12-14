@@ -1,0 +1,295 @@
+html{
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    background: -webkit-radial-gradient(#48406d, #231942, #1b1433);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+}
+
+input{
+    outline: none;
+    background-color: #e0aaff2a;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.header--container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: #e0b1cb;
+}
+
+.header--btn{
+    background-color: #e0b1cb;
+    color: #231942;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 500ms all;
+}
+
+.header--btn i{
+    font-size: 20px;
+    padding-right: 5px;
+    
+}
+
+.header--btn:hover{
+    background-color: #be95c4;
+    color: #5e548e;
+    transform: translateY(-3px);
+    
+}
+
+
+/*Users Cards*/
+
+.user-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+.user{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.048);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 600ms;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-left: 1px solid rgba(255, 255, 255, 0.301);
+    border-top: 1px solid rgba(255, 255, 255, 0.301);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+.user:hover{
+    
+    transform: translateY(-7px);
+}
+
+.user--title{
+    color: #e0b1cb;
+    font-weight: bold;
+    margin-top: 0;
+    
+}
+
+.user--list{
+    margin-top: 0;
+    color:#e0aaffab;
+}
+
+.user--item i {
+    font-size: 20px;
+
+}
+.user--item span{
+    font-weight: bolder;
+
+}
+
+.edit-btn{
+    display: flex;
+    justify-content: end;
+    padding-right: 15px;
+    gap: 8px;
+    margin-top: 20px;
+
+}
+
+.trash{
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    color: #240046;
+    transition: 500ms;
+}
+
+.trash:hover{
+    background-color: #8872a5;
+    color: #e0aaff;
+}
+
+.edit{
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    color: #240046;
+    transition: 500ms;
+}
+
+.edit:hover{
+    background-color: #8872a5;
+    color: #e0aaff;
+}
+
+
+.edit-btn  i{
+    font-size: 20px;
+}
+
+
+/*Modal*/
+.container--form{
+    position: fixed;
+    background-color: #0003;
+    backdrop-filter: blur(2px);
+    z-index: 2;
+    top: 0;
+    min-height: 100vh;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container--info input{
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form{
+    background-color: beige;
+    border-radius: 25px;
+    padding: 15px;
+    padding-bottom: 30px;
+}
+
+
+
+.header--form i{
+    float: right;
+    color: #3c096c;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 30px;
+
+}
+.header--form i:hover{
+    color: #7b2cbf;
+    
+}
+
+.names{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    
+}
+
+.names i{
+    font-size: 30px;
+}
+
+.emails{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.emails i{
+    font-size: 30px;
+}
+.emails input{
+    width: 355px;
+}
+
+.passwords{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.passwords input{
+    width: 355px;
+}
+
+
+.passwords i{
+    font-size: 30px;
+}
+
+.birthdays{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.birthdays input{
+    width: 355px
+}
+
+.birthdays i {
+    font-size: 30px;
+}
+
+.container--info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+
+}
+
+.container--btn{
+    display: flex;
+    justify-content: center;
+}
+
+.form--btn{
+    background-color: #240046;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #9d4edd;
+    font-weight: bolder;
+    font-size: 15px;
+    margin: 25px 0 0;
+    width: 200px;
+    height: 30px;
+}
+
+.form--btn:hover{
+      background:#3c096c;
+      color: #9d4edd;
+      transform: scale(0.98);
+
+}
+
+.disable--form{
+    display: none;
+}
+
