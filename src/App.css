@@ -5,9 +5,7 @@ html {
     /*background: -webkit-radial-gradient(#48406d, #231942, #1b1433);*/
     background: rgb(16, 0, 43);
     background: linear-gradient(90deg, rgba(16, 0, 43, 1) 0%, rgba(60, 9, 108, 1) 60%, rgba(123, 44, 191, 1) 100%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+
     height: 100vh;
 }
 
